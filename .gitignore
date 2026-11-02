@@ -1,0 +1,37 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.env
+.env
+**/.env
+local_performer/.env
+!.env.example
+!**/.env.example
+.venv/
+env/
+venv/
+
+# Base de datos local SQLite (se autogenera en cada máquina)
+local_queue.db
+*.db
+*.sqlite3
+
+# Playwright & Screenshots
+screenshots/
+*.png
+*.jpg
+*.jpeg
+
+# Chrome automation profile & temp media
+chrome_profile/
+temp_media/
+**/temp_media/
+
+# Logs del sistema y tareas
+*.log
+
+# VSCode / IDEs
+.vscode/
+.idea/
+

@@ -1,0 +1,14 @@
+{
+  "queue_name": "GM01_WallapopQueue",
+  "db_path": "../local_queue.db",
+  "clear_previous_queue": false,
+  "default_max_retries": 3,
+  "default_priority": "Medium",
+  "credential_name": "",
+  "headless": false,
+  "browser_type": "chromium",
+  "timeout_ms": 30000,
+  "slow_mo_ms": 100,
+  "profile_dir": "chrome_profile",
+  "keyword_filter": "Despiece"
+}

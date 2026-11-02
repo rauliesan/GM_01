@@ -1,0 +1,36 @@
+{
+  "queue_name": "GM01_WallapopQueue",
+  "db_path": "../local_queue.db",
+  "headless": false,
+  "browser_type": "chromium",
+  "timeout_ms": 30000,
+  "slow_mo_ms": 150,
+  "delay_between_items_ms": 2000,
+  "profile_dir": "chrome_profile",
+  "credential_name": "",
+  "price": "1",
+  "weight": "1 a 2 kg",
+  "condition": "En buen estado",
+  "upload_type": "Algo que ya no necesito",
+  "category_path": [
+    "Motor y accesorios",
+    "Recambios de motos y cuatriciclos",
+    "Motor y piezas de motor"
+  ],
+  "preflight_test": true,
+  "stop_on_error": true,
+  "test_ad": {
+    "title": "Despiece Motor de Prueba Test GM_01",
+    "description": "Anuncio de prueba automatizada para verificar el proceso de subida y posterior borrado. Por favor no comprar.",
+    "sample_image_name": "test_sample_despiece.jpg"
+  },
+  "email_report": {
+    "enabled": true,
+    "recipient_email": "raullsdev@gmail.com",
+    "smtp_server": "smtp.gmail.com",
+    "smtp_port": 587,
+    "sender_email": "raullsdev@gmail.com",
+    "sender_password": "",
+    "use_tls": true
+  }
+}

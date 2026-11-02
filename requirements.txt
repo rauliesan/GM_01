@@ -1,0 +1,6 @@
+# Dependencias de GM_01
+playwright>=1.40.0
+pillow>=10.0.0
+
+# Opcional (el framework incluye lector nativo de Credenciales de Windows sin librerías externas)
+keyring>=24.0.0
