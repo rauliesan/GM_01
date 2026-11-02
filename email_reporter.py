@@ -305,16 +305,21 @@ def send_execution_report(
         print("   [Email] Envío de informe por correo desactivado en config ('enabled': false).")
         return False
 
-    # Obtener dirección de destino
+    # Obtener dirección de destino: primero config.json, luego .env / entorno
+    # (permite tener config.json sin datos personales en el repositorio)
     recipient = (
         email_cfg.get("recipient_email")
         or email_cfg.get("to_email")
         or email_cfg.get("email")
+        or os.environ.get("recipient_email")
+        or os.environ.get("RECIPIENT_EMAIL")
+        or os.environ.get("sender_email")
+        or os.environ.get("SENDER_EMAIL")
         or ""
     ).strip()
 
     if not recipient:
-        print("   [Email] No se especificó 'recipient_email' en config.json. Se omite el envío del informe.")
+        print("   [Email] No se encontró 'recipient_email' en config.json ni en .env. Se omite el envío del informe.")
         return False
 
     # Servidor SMTP y credenciales

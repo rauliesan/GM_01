@@ -196,8 +196,8 @@ python run_pipeline.py --clear         # Cancela los ítems pendientes (pasa a A
 Para mantener las contraseñas seguras y fuera de archivos JSON, las credenciales de correo se leen automáticamente del archivo `.env` ubicado en `local_performer/.env`:
 
 ```env
-sender_email = "raullsdev@gmail.com"
-sender_password = "pmyj ofod mmlq levq"
+sender_email = "tu_correo@gmail.com"
+sender_password = "xxxx xxxx xxxx xxxx"
 ```
 
 > [!NOTE]
@@ -233,11 +233,9 @@ sender_password = "pmyj ofod mmlq levq"
   },
   "email_report": {
     "enabled": true,
-    "recipient_email": "raullsdev@gmail.com",
+    "recipient_email": "tu_correo_de_destino@gmail.com",
     "smtp_server": "smtp.gmail.com",
     "smtp_port": 587,
-    "sender_email": "raullsdev@gmail.com",
-    "sender_password": "",
     "use_tls": true
   }
 }

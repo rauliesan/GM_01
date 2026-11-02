@@ -130,7 +130,7 @@ def run_preflight_check() -> bool:
     """
     Ejecuta la prueba de seguridad previa obligatoria (test_flow.py).
     Garantiza que la subida y el borrado funcionan al 100% antes de tocar anuncios reales.
-    Si falla, test_flow.py ya envía el informe de error a raullsdev@gmail.com.
+    Si falla, test_flow.py ya envía el informe de error a tu correo configurado en .env.
     """
     print("\n" + "=" * 75)
     print("   VERIFICACIÓN PREVIA OBLIGATORIA (PRE-FLIGHT TEST)")

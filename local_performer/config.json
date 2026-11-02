@@ -29,8 +29,6 @@
     "recipient_email": "raullsdev@gmail.com",
     "smtp_server": "smtp.gmail.com",
     "smtp_port": 587,
-    "sender_email": "raullsdev@gmail.com",
-    "sender_password": "",
     "use_tls": true
   }
 }
